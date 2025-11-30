@@ -1,0 +1,511 @@
+<!-- ========================= -->
+<!-- ======= index.html ====== -->
+<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartLife – Student Productivity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__logo">SmartLife</div>
+    <nav class="nav__links">
+      <a href="index.html" class="nav__link nav__link--active">Home</a>
+      <a href="planner.html" class="nav__link">Planner</a>
+      <a href="timer.html" class="nav__link">Study Timer</a>
+      <a href="sleep.html" class="nav__link">Sleep & Habits</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero__content">
+        <h1>Study smarter. Sleep better. Live in balance.</h1>
+        <p>SmartLife helps you plan homework, focus during study sessions, 
+        and build healthier sleep habits – all in one simple website.</p>
+        <div class="hero__actions">
+          <a href="planner.html" class="btn btn--primary">Open Planner</a>
+          <a href="timer.html" class="btn btn--ghost">Start a Focus Session</a>
+        </div>
+      </div>
+
+      <div class="hero__mockup">
+        <div class="mockup-card">
+          <h3>Today at a Glance</h3>
+          <ul>
+            <li>Math — 20 problems</li>
+            <li>English — read chapter 5</li>
+            <li>Biology — study 30 min</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="section-heading">
+        <h2>Everything you need in one place</h2>
+        <p>Three simple tools to support real students with real schedules.</p>
+      </div>
+      <div class="features__grid">
+        <article class="feature-card">
+          <h3>Planner</h3>
+          <p>Add, manage, and check off tasks easily.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Study Timer</h3>
+          <p>Use focused blocks of time to get work done.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Sleep & Habits</h3>
+          <p>Learn routines that help improve energy and focus.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>SmartLife • Independent Study Project</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+<!-- ========================= -->
+<!-- ===== planner.html ====== -->
+<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartLife – Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__logo">SmartLife</div>
+    <nav class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="planner.html" class="nav__link nav__link--active">Planner</a>
+      <a href="timer.html" class="nav__link">Study Timer</a>
+      <a href="sleep.html" class="nav__link">Sleep & Habits</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section-heading">
+      <h1>Daily Planner</h1>
+      <p>Add tasks, organize homework, and check them off as you go.</p>
+    </section>
+
+    <section class="planner">
+      <div class="planner__input">
+        <input id="taskInput" type="text" placeholder="Add a task… e.g. ‘Finish biology notes’" />
+        <button id="addTaskBtn" class="btn btn--primary">Add Task</button>
+      </div>
+
+      <ul id="taskList" class="planner__list"></ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>SmartLife Planner</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- ========================= -->
+<!-- ===== timer.html ======== -->
+<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartLife – Study Timer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__logo">SmartLife</div>
+    <nav class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="planner.html" class="nav__link">Planner</a>
+      <a href="timer.html" class="nav__link nav__link--active">Study Timer</a>
+      <a href="sleep.html" class="nav__link">Sleep & Habits</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section-heading">
+      <h1>Focus Timer</h1>
+      <p>Use 25-minute focus blocks with short breaks to get more done.</p>
+    </section>
+
+    <section class="timer">
+      <div id="timerDisplay" class="timer__display">25:00</div>
+
+      <div class="timer__controls">
+        <button id="startTimer" class="btn btn--primary">Start</button>
+        <button id="pauseTimer" class="btn btn--ghost">Pause</button>
+        <button id="resetTimer" class="btn btn--ghost">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>SmartLife Study Timer</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+<!-- ========================= -->
+<!-- ===== sleep.html ======== -->
+<!-- ========================= -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>SmartLife – Sleep & Habits</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav__logo">SmartLife</div>
+    <nav class="nav__links">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="planner.html" class="nav__link">Planner</a>
+      <a href="timer.html" class="nav__link">Study Timer</a>
+      <a href="sleep.html" class="nav__link nav__link--active">Sleep & Habits</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="section-heading">
+      <h1>Sleep & Habits</h1>
+      <p>Small changes in your routine can make a big difference in your focus.</p>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Why Sleep Matters</h3>
+        <p>Sleep helps your brain remember information and recharge for the next day.</p>
+      </article>
+
+      <article class="card">
+        <h3>Evening Routine</h3>
+        <ul>
+          <li>Turn off screens 30–60 minutes before bed</li>
+          <li>Review tomorrow’s tasks in your planner</li>
+          <li>Do something relaxing (reading, stretching)</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Study–Life Balance</h3>
+        <ul>
+          <li>Plan breaks between long assignments</li>
+          <li>Use the timer for deep work sessions</li>
+          <li>Protect at least one screen-free hour daily</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>SmartLife Sleep & Habits</p>
+  </footer>
+</body>
+</html>
+
+
+
+
+<!-- ========================= -->
+<!-- ===== styles.css ======== -->
+<!-- ========================= -->
+<style>
+:root {
+  --bg: #050816;
+  --navy: #0a1a2f;
+  --silver: #d9dde2;
+  --accent: #4a90e2;
+  --text-main: #f5f7fb;
+  --text-muted: #a5afc3;
+  --radius-lg: 18px;
+  --shadow-soft: 0 18px 40px rgba(0, 0, 0, 0.45);
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", system-ui, sans-serif;
+  background: radial-gradient(circle at top left, #1b2a4a 0%, #050816 60%);
+  color: var(--text-main);
+}
+
+/* NAVIGATION */
+.nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  padding: 1rem 8vw;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(5, 8, 22, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.nav__logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.08em;
+}
+
+.nav__links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav__link {
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+}
+
+.nav__link:hover {
+  color: white;
+}
+
+.nav__link--active {
+  color: white;
+  border-color: var(--accent);
+}
+
+/* LAYOUT */
+main {
+  padding: 3rem 8vw;
+}
+
+.page {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* HERO SECTION */
+.hero {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  min-height: 90vh;
+}
+
+.hero__mockup .mockup-card {
+  background: #0b1326;
+  border-radius: 20px;
+  padding: 1.4rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.mockup-card h3 {
+  margin-top: 0;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 0.7rem 1.4rem;
+  border-radius: 100px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn--ghost {
+  border: 1px solid var(--silver);
+  color: white;
+  background: transparent;
+}
+
+/* FEATURES GRID */
+.features__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 1.4rem;
+}
+
+.feature-card {
+  background: #0b1326;
+  padding: 1.4rem;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+/* PLANNER PAGE */
+.planner__input {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.planner__input input {
+  padding: 0.7rem 1rem;
+  flex: 1;
+  border-radius: 100px;
+  border: 1px solid #3c4b6e;
+  background: #0b1326;
+  color: white;
+}
+
+.planner__list li {
+  background: #0b1326;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  margin-bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.planner__list li.completed span {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+
+/* TIMER */
+.timer__display {
+  font-size: 3rem;
+  padding: 1.2rem 2rem;
+  border-radius: 100px;
+  background: linear-gradient(#1d2d4a, #0b1020);
+  border: 1px solid rgba(255,255,255,0.15);
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+  gap: 1.4rem;
+}
+
+.card {
+  background: #0b1326;
+  padding: 1.3rem;
+  border-radius: 14px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 2rem 0;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+</style>
+
+
+
+
+<!-- ========================= -->
+<!-- ====== script.js ======== -->
+<!-- ========================= -->
+<script>
+// PLANNER
+const taskInput = document.getElementById("taskInput");
+const addTaskBtn = document.getElementById("addTaskBtn");
+const taskList = document.getElementById("taskList");
+
+if (addTaskBtn) {
+  addTaskBtn.addEventListener("click", () => {
+    const text = taskInput.value.trim();
+    if (!text) return;
+
+    const li = document.createElement("li");
+    const span = document.createElement("span");
+    span.textContent = text;
+
+    const actions = document.createElement("div");
+
+    const doneBtn = document.createElement("button");
+    doneBtn.textContent = "Done";
+    doneBtn.className = "btn btn--ghost";
+    doneBtn.onclick = () => li.classList.toggle("completed");
+
+    const deleteBtn = document.createElement("button");
+    deleteBtn.textContent = "✕";
+    deleteBtn.className = "btn btn--ghost";
+    deleteBtn.onclick = () => li.remove();
+
+    actions.appendChild(doneBtn);
+    actions.appendChild(deleteBtn);
+
+    li.appendChild(span);
+    li.appendChild(actions);
+    taskList.appendChild(li);
+
+    taskInput.value = "";
+  });
+}
+
+// TIMER
+const timerDisplay = document.getElementById("timerDisplay");
+let timerSeconds = 25 * 60;
+let timerInterval = null;
+
+function updateTimer() {
+  const mins = String(Math.floor(timerSeconds / 60)).padStart(2, "0");
+  const secs = String(timerSeconds % 60).padStart(2, "0");
+  timerDisplay.textContent = `${mins}:${secs}`;
+}
+
+function startTimer() {
+  if (timerInterval) return;
+  timerInterval = setInterval(() => {
+    timerSeconds--;
+    updateTimer();
+    if (timerSeconds <= 0) {
+      clearInterval(timerInterval);
+      alert("Focus session complete!");
+    }
+  }, 1000);
+}
+
+function pauseTimer() {
+  clearInterval(timerInterval);
+  timerInterval = null;
+}
+
+function resetTimer() {
+  timerSeconds = 25 * 60;
+  updateTimer();
+  pauseTimer();
+}
+
+if (document.getElementById("startTimer")) {
+  document.getElementById("startTimer").onclick = startTimer;
+  document.getElementById("pauseTimer").onclick = pauseTimer;
+  document.getElementById("resetTimer").onclick = resetTimer;
+  updateTimer();
+}
+</script>
